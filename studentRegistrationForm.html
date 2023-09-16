@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>form</title>
+    <style>
+      label{
+          color: cadetblue;
+      }
+      input[type="text"]{
+          color: coral;
+          text-transform: capitalize;
+          border-color: chocolate;
+      }
+      #formHeading:hover{
+          color: cadetblue;
+      }
+      input[type="submit"]:hover{
+          color: cadetblue;
+      }
+      .loreminfo::selection{
+        background-color: aqua;
+      }
+      .nameList{
+             list-style-type:lower-alpha;  /* upper-roman; | lower-roman | lower-alpha | upper-alpha  */
+        }
+
+        #techStack{
+            list-style-type: circle;  /* circle | square  */
+        }
+  </style>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <body>
+    <h2 id="formHeading">Student Registration Form</h2>
+    <fieldset>
+      <legend >Student Reg Information</legend>
+      <table>
+        <tbody>
+          <form>
+            <tr>
+              <td><label for=""> First Name:</label></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td><label for="">Last Name :</label></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td><label for="">Email Address :</label></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td><label for="">Graduation</label></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td><label for="">Password :</label></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td><label for="">Date of birth:</label></td>
+              <td><input type="date" required /></td>
+            </tr>
+            <tr>
+              <td>Pass out Year :</td>
+              <td><input type="date" /></td>
+            </tr>
+            <tr>
+              <td><label for="">Permanent Address :</label></td>
+              <td><input type="text" /></td>
+            </tr>
+            
+            <tr>
+              <td><label for=""> Upload Marksheets</label></td>
+              <td><input type="file" multiple /></td>
+            </tr>
+            <tr>
+              <td><button>reset</button></td>
+              <td><button>submit</button></td>
+            </tr>
+          </form>
+        </tbody>
+      </table>
+      
+      <ol class="nameList">
+        <li>Nilesh</li>
+        <li>Sarthak</li>
+        <li>Roshan</li>
+        <li>Pravin</li>
+        <li>Janhavi</li>      
+      </ol>
+
+      <ul id="techStack">
+        <li>Angular</li>
+        <li>Java</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>Python</li>      
+      </ul>
+
+
+      <p class="loreminfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus animi repellat accusantium maiores rem doloribus! Explicabo qui repudiandae dolore commodi ut quae minima! Nisi, dolorum!</p>
+
+      
+         <p> SSO sign in option
+        
+          <a href="https://www.google.com/" target="_blank"><i class="fa fa-google" aria-hidden="true"></i> </a>
+          <a href=https://www.instagram.com/ target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a> 
+        </p>
+
+       
+        
+
+    </fieldset>
+  </body>
+</html>
