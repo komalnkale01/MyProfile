@@ -1,88 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discount Calculator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
-    <style>   
-        #div1{
-            width: 600px;
-            height: 520px;
-            background-color: #718093;
-            display: inline-block;
-            border: 2px solid brown;
-            margin-top: 50px;
-            margin-left: 220px;
-            position: relative;
-            z-index: 1;
-            border-radius: 15px;
-            /*position: static;  This is default for every element */
-            
-            /* left: 50px;
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #div1 {
+        width: 600px;
+        height: 520px;
+        background-color: #718093;
+        display: inline-block;
+        border: 2px solid brown;
+        margin-top: 50px;
+        margin-left: 220px;
+        position: relative;
+        z-index: 2;
+        border-radius: 15px;
+        /*position: static;  This is default for every element */
+
+        /* left: 50px;
             top: 50px; */
-            
-        }
-        #div2{
-            width: 500px;
-            height: 430px;
-            background-color: white;
-            display: inline-block;
-            border: 2px solid #6ab04c;
-            position: absolute;  
-            z-index: 2;
-            border-radius: 15px;
-             top: 100px;
-             left: 275px;      
-        }
-        .heading{
-            font-family: 'Poppins', sans-serif;
-            margin-left: 85px;
-            color: #273c75;  
-            margin-bottom: 50px;
-            letter-spacing: 3px;
-       }
-       input[type="text"]:hover{
-        border: 2px solid blue;  
-       }       
-        .textPosition{
-            color: #273c75 ;
-            padding-left: 10px;
-        }
-        .button{
-           width: 490px; 
-           height: 30px;
-           margin-top: 40px;
-           background-color: #6ab04c;
-           margin-left: 5px;
-           font-size: 20px;
-           font-weight: bold;
-        }
-        .button:hover{
-            background-color: blue;
-        }
-        .textbox{
-            width: 480px; 
-            margin-top: 8px;
-            margin-left: 5px;
-        }
+      }
+      #div2 {
+        width: 500px;
+        height: 430px;
+        background-color: white;
+        display: inline-block;
+        border: 2px solid #6ab04c;
+        position: absolute;
+        z-index: 1;
+        border-radius: 15px;
+        margin-top: 45px;
+        margin-left: 45px;
+        /* top: 100px;
+        left: 275px; */
+      }
+      .heading {
+        font-family: "Poppins", sans-serif;
+        margin-left: 85px;
+        color: #273c75;
+        margin-bottom: 5px;
+        letter-spacing: 3px;
+        display: inline-block;
+      }
+      input[type="number"]:hover {
+        border: 2px solid blue;
+      }
+      .textPosition {
+        color: #273c75;
+        padding-left: 10px;
+      }
+      .button {
+        width: 490px;
+        height: 30px;
+        margin-top: 40px;
+        background-color: #6ab04c;
+        margin-left: 5px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .button:hover {
+        background-color: blue;
+      }
+      .textbox {
+        width: 480px;
+        margin-top: 8px;
+        margin-left: 5px;
+      }
     </style>
-</head>
-<body>
-      <div id="div1"> </div>
-
-        <div id="div2">
-            <h2 class="heading">DISCOUNT CALCULATOR</h2>
-            <h3 class="textPosition">Enter the Bill amount and discount in percentage</h3>
-            <h3 class="textPosition">Bill Amount</h3>
-            <input type="number" class="textbox">
-            <h3 class="textPosition">Discount Percentage</h3>
-            <input type="number" class="textbox">
-            <input type="button" value="Calculate" class="button">
-            <h3 class="textPosition"> Total Discount Amount</h3>
-        </div> 
-
-</body>
+  </head>
+  <body>
+    <div id="div1">
+      <div id="div2">
+        <h2 class="heading">DISCOUNT CALCULATOR</h2>
+        <h3 class="textPosition">
+          Enter the Bill amount and discount in percentage
+        </h3>
+        <h3 class="textPosition">Bill Amount</h3>
+        <input type="number" class="textbox" />
+        <h3 class="textPosition">Discount Percentage</h3>
+        <input type="number" class="textbox" />
+        <input type="button" value="Calculate" class="button" />
+        <h3 class="textPosition">Total Discount Amount</h3>
+      </div>
+    </div>
+  </body>
 </html>
